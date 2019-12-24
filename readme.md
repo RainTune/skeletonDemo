@@ -11,7 +11,12 @@
 - git clone 克隆项目
 - `cd skeletonDemo/autoSkeletonDemo`
 - `npm i`
-- `npm run dev`
+- ```// 修改node_modules/page-skeleton-webpack-plugin/src/skeletonPlugin.js
+if (!this.server) {
+    const server = this.server = new Server(this.options) // eslint-disable-line no-multi-assign
+    server.listen().catch(err => server.log.warn(err))
+  }```
+- `npm run serve`
 - 打开谷歌浏览器输入地址：`localhost:8080`
 - 按下`ctrl +enter`
 - 然后页面最上面会出现一个导航条，点击左面的p按钮
@@ -27,5 +32,5 @@
 - git clone 克隆项目
 - `cd skeletonDemo/baseSkeletonDemo`
 - `npm i`
-- `npm run dev`
+- `npm run serve`
 
