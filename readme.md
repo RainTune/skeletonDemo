@@ -11,11 +11,13 @@
 - git clone 克隆项目
 - `cd skeletonDemo/autoSkeletonDemo`
 - `npm i`
-- ```// 修改node_modules/page-skeleton-webpack-plugin/src/skeletonPlugin.js
-if (!this.server) {
-    const server = this.server = new Server(this.options) // eslint-disable-line no-multi-assign
-    server.listen().catch(err => server.log.warn(err))
-  }```
+- 修改node_modules/page-skeleton-webpack-plugin/src/skeletonPlugin.js
+    ```
+    if (!this.server) {
+        const server = this.server = new Server(this.options) // eslint-disable-line no-multi-assign
+        server.listen().catch(err => server.log.warn(err))
+      }
+    ```
 - `npm run serve`
 - 打开谷歌浏览器输入地址：`localhost:8080`
 - 按下`ctrl +enter`
